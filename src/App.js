@@ -21,11 +21,17 @@ const Background = styled.div`
 `
 const FooterLink = styled.a`
   &{
-    
+    position:fixed;
+    right:0;
+    bottom:0;
+    font-family:'InYourFace';
+    color:white;
+    font-size: 2.5em;
+    padding:1em;
   }
 `
 
-export default ()=>{
+const App = ()=>{
   const [value, setValue] =useState(0);
   const [count, setCount] = useState(0);
   const [rendered, setRendered] = useState(false);
@@ -84,6 +90,9 @@ export default ()=>{
         handleSubmit={handleSubmit}
         handleOnChange={handleOnChange}
       />
+      <FooterLink href="https://www.haoyudoing.com/code"  target="_blank" rel="noopener noreferral">haoyudoing.com</FooterLink>
     </Background>
   )
 }
+
+export default App;
