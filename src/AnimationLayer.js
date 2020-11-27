@@ -2,11 +2,11 @@ import React, {useState, useEffect} from 'react';
 import Sprite from './Sprite';
 import {sprites} from './SpriteImport'
 
-function getRandomArbitrary(min, max) {
+ const getRandomArbitrary = (min, max) => {
   return Math.random() * (max - min) + min;
 }
 
-export default ({num,unlimited,rendered,setRendered}) => {
+const AnimationLayer = ({num,unlimited,rendered,setRendered}) => {
   const [list, setList] = useState([]);
 
   useEffect(()=>{
@@ -43,3 +43,5 @@ export default ({num,unlimited,rendered,setRendered}) => {
   </div>
   )
 }
+
+export default AnimationLayer;

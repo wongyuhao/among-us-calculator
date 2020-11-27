@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import dollar from './fonts/dollar.svg'
 
 const Container = styled.div`
   &{
@@ -87,7 +86,7 @@ const StyledLink = styled.a`
 export default props => (
   <Container>
     <Title>Among Us Calculator</Title>
-    <StyledLink href='https://store.steampowered.com/app/945360/Among_Us/'>Current Price of 1 copy: ${props.price}</StyledLink>
+    <StyledLink href='https://store.steampowered.com/app/945360/Among_Us/' target="_blank" rel="noopener noreferral">Current Price of 1 copy: ${props.price}</StyledLink>
 
 
 
